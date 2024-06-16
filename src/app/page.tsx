@@ -1,3 +1,4 @@
+import { Icons } from "@/components/Icons";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Phone from "@/components/Phone";
 import { Check, Star } from "lucide-react";
@@ -341,6 +342,56 @@ export default function Home() {
               width of 64
               */}
             </div>
+          </div>
+        </MaxWidthWrapper>
+      </section>
+      <section className="bg-slate-100 py-24">
+        {/*
+        background with the color slate
+        padding y of 24
+        */}
+        <MaxWidthWrapper className="flex flex-col items-center gap-16
+        sm:gap-32">
+          {/*
+          flex display
+          position flex items vertically
+          center items
+          gap of 16
+          small devices -> gap of 32
+          */}
+          <div className="flex flex-col lg:flex-row items-center gap-4
+          sm:gap-6">
+            {/*
+            flex display
+            position flex items vertically
+            large devices -> position flex items horizontally
+            centered items
+            gap 0f 4
+            small devices -> gap of 6
+            */}
+            <h2 className="order-1 mt-2 tracking-tight text-center
+            text-balance !leading-tight font-bold text-5xl md:text-6xl
+            text-gray-900">
+              {/*
+              control the render process of flex items; in this case, this text will be rendered first
+              margin top of 2
+              tight letter spacing
+              center the text inside the container
+              distribute the text evenly across the line of the container
+              prioritize (override the default setting of the container or the flow of the DOM) the element to have tight line-height
+              bold the font
+              5xl of the font size
+              medium devices -> font size of 6xl
+              gray colored text with weight of 900
+              */}
+              What our {' '} 
+              <span className="relative px-2">
+                customers <Icons.underline className="hidden sm:block
+                pointer-events-none absolute inset-x-0 -bottom-6
+                text-green-500"/>
+              </span>
+              {' '} say
+            </h2>
           </div>
         </MaxWidthWrapper>
       </section>
